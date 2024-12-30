@@ -1,0 +1,91 @@
+.search-bar-container {
+  position: relative;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  border: 1px solid #3a249a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Input Field */
+.search-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #2874f0;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+/* Suggestions Dropdown */
+.suggestions-list {
+  position: fixed;
+  top: 7%;
+  left: 33.5%;
+  right: 33%;
+  background: rgb(216, 44, 44);
+  border: 1px solid #b03535;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 999999;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Individual Suggestion Item */
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.suggestion-item:hover {
+  background-color: #f1f1f1;
+}
+
+.cart-body {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100% - 120px); /* Adjust height for header/footer */
+}
+
+.cart-item {
+  display: flex;
+  height: 160px;
+  width: 160px;
+  justify-content: space-between;
+  /* margin-bottom: 15px; */
+  border: 1px solid #f0f0f0;
+  padding-top: 10px;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.item-details {
+  align-items: center;
+  margin: 10px;
+  /* justify-content: center; */
+  text-align: left;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item-price,
+.item-quantity {
+  font-size: 14px;
+}
