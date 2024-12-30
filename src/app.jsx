@@ -1,12 +1,12 @@
 
 import "./app.css";
 
-import { useEffect } from "react";
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
 
 
 import axios from "axios";
-export const App = () => {
+const App = () => {
 
   const [suggestions, setSuggestions] = useState([]);
   const [isFocused, setIsFocused] = useState(false);
@@ -128,4 +128,4 @@ export const App = () => {
   )
 }
 
-// export default App
+export default App
